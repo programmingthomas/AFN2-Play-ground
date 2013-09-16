@@ -10,6 +10,7 @@ PODS:
   - AFNetworking/Reachability (2.0.0-RC3)
   - AFNetworking/Security (2.0.0-RC3)
   - AFNetworking/Serialization (2.0.0-RC3)
+  - AFNetworking/UIKit+AFNetworking (2.0.0-RC3)
   - FMDB (2.1):
     - FMDB/standard
   - FMDB/common (2.1)
@@ -18,6 +19,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 2.0.0-RC3)
+  - AFNetworking/UIKit+AFNetworking (= 2.0.0-RC3)
   - FMDB (~> 2.1)
 
 SPEC CHECKSUMS:

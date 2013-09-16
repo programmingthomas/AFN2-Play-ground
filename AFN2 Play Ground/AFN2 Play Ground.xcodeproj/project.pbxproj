@@ -1,1086 +1,544 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1EB3B854693046C2B8AB7A70</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AEDA696290A14300A05285ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9DDE0FCF37C41E1BA6073E9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>AEDA696290A14300A05285ED</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CCB70D6B6E3449A491BD973C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E99CDD8D17E785F100F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDD9F17E785F100F37D33</string>
-				<string>E99CDDBE17E785F200F37D33</string>
-				<string>E99CDD9817E785F100F37D33</string>
-				<string>E99CDD9717E785F100F37D33</string>
-				<string>F19D0DFFEAB44E3EA8361F6D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDD8E17E785F100F37D33</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Programming Thomas</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E99CDDB617E785F200F37D33</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>E99CDD9517E785F100F37D33</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E99CDD9117E785F100F37D33</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E99CDD8D17E785F100F37D33</string>
-			<key>productRefGroup</key>
-			<string>E99CDD9717E785F100F37D33</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E99CDD9517E785F100F37D33</string>
-				<string>E99CDDB617E785F200F37D33</string>
-			</array>
-		</dict>
-		<key>E99CDD9117E785F100F37D33</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E99CDDC617E785F200F37D33</string>
-				<string>E99CDDC717E785F200F37D33</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E99CDD9217E785F100F37D33</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E99CDDB017E785F100F37D33</string>
-				<string>E99CDDAA17E785F100F37D33</string>
-				<string>E99CDDA617E785F100F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E99CDD9317E785F100F37D33</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E99CDD9C17E785F100F37D33</string>
-				<string>E99CDD9E17E785F100F37D33</string>
-				<string>E99CDD9A17E785F100F37D33</string>
-				<string>1EB3B854693046C2B8AB7A70</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E99CDD9417E785F100F37D33</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E99CDDB217E785F200F37D33</string>
-				<string>E99CDDA417E785F100F37D33</string>
-				<string>E99CDDAD17E785F100F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E99CDD9517E785F100F37D33</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E99CDDC817E785F200F37D33</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A9DDE0FCF37C41E1BA6073E9</string>
-				<string>E99CDD9217E785F100F37D33</string>
-				<string>E99CDD9317E785F100F37D33</string>
-				<string>E99CDD9417E785F100F37D33</string>
-				<string>CCB70D6B6E3449A491BD973C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AFN2 Play Ground</string>
-			<key>productName</key>
-			<string>AFN2 Play Ground</string>
-			<key>productReference</key>
-			<string>E99CDD9617E785F100F37D33</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E99CDD9617E785F100F37D33</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AFN2 Play Ground.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E99CDD9717E785F100F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDD9617E785F100F37D33</string>
-				<string>E99CDDB717E785F200F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDD9817E785F100F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDD9917E785F100F37D33</string>
-				<string>E99CDD9B17E785F100F37D33</string>
-				<string>E99CDD9D17E785F100F37D33</string>
-				<string>E99CDDB817E785F200F37D33</string>
-				<string>AEDA696290A14300A05285ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDD9917E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E99CDD9A17E785F100F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDD9917E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDD9B17E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E99CDD9C17E785F100F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDD9B17E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDD9D17E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>E99CDD9E17E785F100F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDD9D17E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDD9F17E785F100F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDDA817E785F100F37D33</string>
-				<string>E99CDDA917E785F100F37D33</string>
-				<string>E99CDDAB17E785F100F37D33</string>
-				<string>E99CDDAE17E785F100F37D33</string>
-				<string>E99CDDAF17E785F100F37D33</string>
-				<string>E99CDDB117E785F200F37D33</string>
-				<string>E99CDDA017E785F100F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AFN2 Play Ground</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDA017E785F100F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDDA117E785F100F37D33</string>
-				<string>E99CDDA217E785F100F37D33</string>
-				<string>E99CDDA517E785F100F37D33</string>
-				<string>E99CDDA717E785F100F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDA117E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>AFN2 Play Ground-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDA217E785F100F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDDA317E785F100F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDA317E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDA417E785F100F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDA217E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDA517E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDA617E785F100F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDA517E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDA717E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AFN2 Play Ground-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDA817E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDA917E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDAA17E785F100F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDA917E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDAB17E785F100F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDDAC17E785F100F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDAC17E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDAD17E785F100F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDAB17E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDAE17E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDAF17E785F100F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDB017E785F100F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDAF17E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDB117E785F200F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDB217E785F200F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDB117E785F200F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDB317E785F200F37D33</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E99CDDC517E785F200F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E99CDDB417E785F200F37D33</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E99CDDB917E785F200F37D33</string>
-				<string>E99CDDBB17E785F200F37D33</string>
-				<string>E99CDDBA17E785F200F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E99CDDB517E785F200F37D33</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E99CDDC317E785F200F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E99CDDB617E785F200F37D33</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E99CDDCB17E785F200F37D33</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E99CDDB317E785F200F37D33</string>
-				<string>E99CDDB417E785F200F37D33</string>
-				<string>E99CDDB517E785F200F37D33</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E99CDDBD17E785F200F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AFN2 Play GroundTests</string>
-			<key>productName</key>
-			<string>AFN2 Play GroundTests</string>
-			<key>productReference</key>
-			<string>E99CDDB717E785F200F37D33</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>E99CDDB717E785F200F37D33</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AFN2 Play GroundTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E99CDDB817E785F200F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>E99CDDB917E785F200F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDB817E785F200F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDBA17E785F200F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDD9917E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDBB17E785F200F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDD9D17E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDBC17E785F200F37D33</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E99CDD8E17E785F100F37D33</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E99CDD9517E785F100F37D33</string>
-			<key>remoteInfo</key>
-			<string>AFN2 Play Ground</string>
-		</dict>
-		<key>E99CDDBD17E785F200F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E99CDD9517E785F100F37D33</string>
-			<key>targetProxy</key>
-			<string>E99CDDBC17E785F200F37D33</string>
-		</dict>
-		<key>E99CDDBE17E785F200F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDDC417E785F200F37D33</string>
-				<string>E99CDDBF17E785F200F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AFN2 Play GroundTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDBF17E785F200F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDDC017E785F200F37D33</string>
-				<string>E99CDDC117E785F200F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDC017E785F200F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>AFN2 Play GroundTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDC117E785F200F37D33</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E99CDDC217E785F200F37D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDC217E785F200F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDC317E785F200F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDC117E785F200F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDC417E785F200F37D33</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AFN2_Play_GroundTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E99CDDC517E785F200F37D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E99CDDC417E785F200F37D33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E99CDDC617E785F200F37D33</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E99CDDC717E785F200F37D33</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E99CDDC817E785F200F37D33</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E99CDDC917E785F200F37D33</string>
-				<string>E99CDDCA17E785F200F37D33</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E99CDDC917E785F200F37D33</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F19D0DFFEAB44E3EA8361F6D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AFN2 Play Ground/AFN2 Play Ground-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AFN2 Play Ground/AFN2 Play Ground-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E99CDDCA17E785F200F37D33</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F19D0DFFEAB44E3EA8361F6D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AFN2 Play Ground/AFN2 Play Ground-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AFN2 Play Ground/AFN2 Play Ground-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E99CDDCB17E785F200F37D33</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E99CDDCC17E785F200F37D33</string>
-				<string>E99CDDCD17E785F200F37D33</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E99CDDCC17E785F200F37D33</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/AFN2 Play Ground.app/AFN2 Play Ground</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AFN2 Play Ground/AFN2 Play Ground-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>AFN2 Play GroundTests/AFN2 Play GroundTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E99CDDCD17E785F200F37D33</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/AFN2 Play Ground.app/AFN2 Play Ground</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AFN2 Play Ground/AFN2 Play Ground-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AFN2 Play GroundTests/AFN2 Play GroundTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F19D0DFFEAB44E3EA8361F6D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E99CDD8E17E785F100F37D33</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EB3B854693046C2B8AB7A70 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDA696290A14300A05285ED /* libPods.a */; };
+		E99CDD9A17E785F100F37D33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99CDD9917E785F100F37D33 /* Foundation.framework */; };
+		E99CDD9C17E785F100F37D33 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99CDD9B17E785F100F37D33 /* CoreGraphics.framework */; };
+		E99CDD9E17E785F100F37D33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99CDD9D17E785F100F37D33 /* UIKit.framework */; };
+		E99CDDA417E785F100F37D33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E99CDDA217E785F100F37D33 /* InfoPlist.strings */; };
+		E99CDDA617E785F100F37D33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDA517E785F100F37D33 /* main.m */; };
+		E99CDDAA17E785F100F37D33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDA917E785F100F37D33 /* AppDelegate.m */; };
+		E99CDDAD17E785F100F37D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99CDDAB17E785F100F37D33 /* Main.storyboard */; };
+		E99CDDB017E785F100F37D33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDAF17E785F100F37D33 /* ViewController.m */; };
+		E99CDDB217E785F200F37D33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99CDDB117E785F200F37D33 /* Images.xcassets */; };
+		E99CDDB917E785F200F37D33 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99CDDB817E785F200F37D33 /* XCTest.framework */; };
+		E99CDDBA17E785F200F37D33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99CDD9917E785F100F37D33 /* Foundation.framework */; };
+		E99CDDBB17E785F200F37D33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99CDD9D17E785F100F37D33 /* UIKit.framework */; };
+		E99CDDC317E785F200F37D33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E99CDDC117E785F200F37D33 /* InfoPlist.strings */; };
+		E99CDDC517E785F200F37D33 /* AFN2_Play_GroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDC417E785F200F37D33 /* AFN2_Play_GroundTests.m */; };
+		E99CDDD017E78AD100F37D33 /* RedditPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDCF17E78AD100F37D33 /* RedditPostCell.m */; };
+		E99CDDD317E78B7000F37D33 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDD217E78B7000F37D33 /* ArrayDataSource.m */; };
+		E99CDDD617E78E9200F37D33 /* RedditResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDD517E78E9200F37D33 /* RedditResponseSerializer.m */; };
+		E99CDDD917E78EF100F37D33 /* RedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDD817E78EF100F37D33 /* RedditPost.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E99CDDBC17E785F200F37D33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E99CDD8E17E785F100F37D33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99CDD9517E785F100F37D33;
+			remoteInfo = "AFN2 Play Ground";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEDA696290A14300A05285ED /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99CDD9617E785F100F37D33 /* AFN2 Play Ground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFN2 Play Ground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99CDD9917E785F100F37D33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E99CDD9B17E785F100F37D33 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E99CDD9D17E785F100F37D33 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E99CDDA117E785F100F37D33 /* AFN2 Play Ground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFN2 Play Ground-Info.plist"; sourceTree = "<group>"; };
+		E99CDDA317E785F100F37D33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E99CDDA517E785F100F37D33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E99CDDA717E785F100F37D33 /* AFN2 Play Ground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFN2 Play Ground-Prefix.pch"; sourceTree = "<group>"; };
+		E99CDDA817E785F100F37D33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E99CDDA917E785F100F37D33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E99CDDAC17E785F100F37D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E99CDDAE17E785F100F37D33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E99CDDAF17E785F100F37D33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E99CDDB117E785F200F37D33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E99CDDB717E785F200F37D33 /* AFN2 Play GroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AFN2 Play GroundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99CDDB817E785F200F37D33 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E99CDDC017E785F200F37D33 /* AFN2 Play GroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFN2 Play GroundTests-Info.plist"; sourceTree = "<group>"; };
+		E99CDDC217E785F200F37D33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E99CDDC417E785F200F37D33 /* AFN2_Play_GroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFN2_Play_GroundTests.m; sourceTree = "<group>"; };
+		E99CDDCE17E78AD100F37D33 /* RedditPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditPostCell.h; sourceTree = "<group>"; };
+		E99CDDCF17E78AD100F37D33 /* RedditPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPostCell.m; sourceTree = "<group>"; };
+		E99CDDD117E78B7000F37D33 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		E99CDDD217E78B7000F37D33 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		E99CDDD417E78E9200F37D33 /* RedditResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditResponseSerializer.h; sourceTree = "<group>"; };
+		E99CDDD517E78E9200F37D33 /* RedditResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditResponseSerializer.m; sourceTree = "<group>"; };
+		E99CDDD717E78EF100F37D33 /* RedditPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditPost.h; sourceTree = "<group>"; };
+		E99CDDD817E78EF100F37D33 /* RedditPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPost.m; sourceTree = "<group>"; };
+		F19D0DFFEAB44E3EA8361F6D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E99CDD9317E785F100F37D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99CDD9C17E785F100F37D33 /* CoreGraphics.framework in Frameworks */,
+				E99CDD9E17E785F100F37D33 /* UIKit.framework in Frameworks */,
+				E99CDD9A17E785F100F37D33 /* Foundation.framework in Frameworks */,
+				1EB3B854693046C2B8AB7A70 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99CDDB417E785F200F37D33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99CDDB917E785F200F37D33 /* XCTest.framework in Frameworks */,
+				E99CDDBB17E785F200F37D33 /* UIKit.framework in Frameworks */,
+				E99CDDBA17E785F200F37D33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E99CDD8D17E785F100F37D33 = {
+			isa = PBXGroup;
+			children = (
+				E99CDD9F17E785F100F37D33 /* AFN2 Play Ground */,
+				E99CDDBE17E785F200F37D33 /* AFN2 Play GroundTests */,
+				E99CDD9817E785F100F37D33 /* Frameworks */,
+				E99CDD9717E785F100F37D33 /* Products */,
+				F19D0DFFEAB44E3EA8361F6D /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E99CDD9717E785F100F37D33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDD9617E785F100F37D33 /* AFN2 Play Ground.app */,
+				E99CDDB717E785F200F37D33 /* AFN2 Play GroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E99CDD9817E785F100F37D33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDD9917E785F100F37D33 /* Foundation.framework */,
+				E99CDD9B17E785F100F37D33 /* CoreGraphics.framework */,
+				E99CDD9D17E785F100F37D33 /* UIKit.framework */,
+				E99CDDB817E785F200F37D33 /* XCTest.framework */,
+				AEDA696290A14300A05285ED /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E99CDD9F17E785F100F37D33 /* AFN2 Play Ground */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDDA817E785F100F37D33 /* AppDelegate.h */,
+				E99CDDA917E785F100F37D33 /* AppDelegate.m */,
+				E99CDDAB17E785F100F37D33 /* Main.storyboard */,
+				E99CDDAE17E785F100F37D33 /* ViewController.h */,
+				E99CDDAF17E785F100F37D33 /* ViewController.m */,
+				E99CDDB117E785F200F37D33 /* Images.xcassets */,
+				E99CDDA017E785F100F37D33 /* Supporting Files */,
+				E99CDDCE17E78AD100F37D33 /* RedditPostCell.h */,
+				E99CDDCF17E78AD100F37D33 /* RedditPostCell.m */,
+				E99CDDD117E78B7000F37D33 /* ArrayDataSource.h */,
+				E99CDDD217E78B7000F37D33 /* ArrayDataSource.m */,
+				E99CDDD417E78E9200F37D33 /* RedditResponseSerializer.h */,
+				E99CDDD517E78E9200F37D33 /* RedditResponseSerializer.m */,
+				E99CDDD717E78EF100F37D33 /* RedditPost.h */,
+				E99CDDD817E78EF100F37D33 /* RedditPost.m */,
+			);
+			path = "AFN2 Play Ground";
+			sourceTree = "<group>";
+		};
+		E99CDDA017E785F100F37D33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDDA117E785F100F37D33 /* AFN2 Play Ground-Info.plist */,
+				E99CDDA217E785F100F37D33 /* InfoPlist.strings */,
+				E99CDDA517E785F100F37D33 /* main.m */,
+				E99CDDA717E785F100F37D33 /* AFN2 Play Ground-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E99CDDBE17E785F200F37D33 /* AFN2 Play GroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDDC417E785F200F37D33 /* AFN2_Play_GroundTests.m */,
+				E99CDDBF17E785F200F37D33 /* Supporting Files */,
+			);
+			path = "AFN2 Play GroundTests";
+			sourceTree = "<group>";
+		};
+		E99CDDBF17E785F200F37D33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDDC017E785F200F37D33 /* AFN2 Play GroundTests-Info.plist */,
+				E99CDDC117E785F200F37D33 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E99CDD9517E785F100F37D33 /* AFN2 Play Ground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99CDDC817E785F200F37D33 /* Build configuration list for PBXNativeTarget "AFN2 Play Ground" */;
+			buildPhases = (
+				A9DDE0FCF37C41E1BA6073E9 /* Check Pods Manifest.lock */,
+				E99CDD9217E785F100F37D33 /* Sources */,
+				E99CDD9317E785F100F37D33 /* Frameworks */,
+				E99CDD9417E785F100F37D33 /* Resources */,
+				CCB70D6B6E3449A491BD973C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AFN2 Play Ground";
+			productName = "AFN2 Play Ground";
+			productReference = E99CDD9617E785F100F37D33 /* AFN2 Play Ground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E99CDDB617E785F200F37D33 /* AFN2 Play GroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99CDDCB17E785F200F37D33 /* Build configuration list for PBXNativeTarget "AFN2 Play GroundTests" */;
+			buildPhases = (
+				E99CDDB317E785F200F37D33 /* Sources */,
+				E99CDDB417E785F200F37D33 /* Frameworks */,
+				E99CDDB517E785F200F37D33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E99CDDBD17E785F200F37D33 /* PBXTargetDependency */,
+			);
+			name = "AFN2 Play GroundTests";
+			productName = "AFN2 Play GroundTests";
+			productReference = E99CDDB717E785F200F37D33 /* AFN2 Play GroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E99CDD8E17E785F100F37D33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Programming Thomas";
+				TargetAttributes = {
+					E99CDDB617E785F200F37D33 = {
+						TestTargetID = E99CDD9517E785F100F37D33;
+					};
+				};
+			};
+			buildConfigurationList = E99CDD9117E785F100F37D33 /* Build configuration list for PBXProject "AFN2 Play Ground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E99CDD8D17E785F100F37D33;
+			productRefGroup = E99CDD9717E785F100F37D33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E99CDD9517E785F100F37D33 /* AFN2 Play Ground */,
+				E99CDDB617E785F200F37D33 /* AFN2 Play GroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E99CDD9417E785F100F37D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99CDDB217E785F200F37D33 /* Images.xcassets in Resources */,
+				E99CDDA417E785F100F37D33 /* InfoPlist.strings in Resources */,
+				E99CDDAD17E785F100F37D33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99CDDB517E785F200F37D33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99CDDC317E785F200F37D33 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9DDE0FCF37C41E1BA6073E9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB70D6B6E3449A491BD973C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E99CDD9217E785F100F37D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99CDDD617E78E9200F37D33 /* RedditResponseSerializer.m in Sources */,
+				E99CDDB017E785F100F37D33 /* ViewController.m in Sources */,
+				E99CDDD917E78EF100F37D33 /* RedditPost.m in Sources */,
+				E99CDDD017E78AD100F37D33 /* RedditPostCell.m in Sources */,
+				E99CDDAA17E785F100F37D33 /* AppDelegate.m in Sources */,
+				E99CDDD317E78B7000F37D33 /* ArrayDataSource.m in Sources */,
+				E99CDDA617E785F100F37D33 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99CDDB317E785F200F37D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99CDDC517E785F200F37D33 /* AFN2_Play_GroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E99CDDBD17E785F200F37D33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E99CDD9517E785F100F37D33 /* AFN2 Play Ground */;
+			targetProxy = E99CDDBC17E785F200F37D33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E99CDDA217E785F100F37D33 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99CDDA317E785F100F37D33 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E99CDDAB17E785F100F37D33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99CDDAC17E785F100F37D33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E99CDDC117E785F200F37D33 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99CDDC217E785F200F37D33 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E99CDDC617E785F200F37D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E99CDDC717E785F200F37D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E99CDDC917E785F200F37D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19D0DFFEAB44E3EA8361F6D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFN2 Play Ground/AFN2 Play Ground-Prefix.pch";
+				INFOPLIST_FILE = "AFN2 Play Ground/AFN2 Play Ground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E99CDDCA17E785F200F37D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19D0DFFEAB44E3EA8361F6D /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFN2 Play Ground/AFN2 Play Ground-Prefix.pch";
+				INFOPLIST_FILE = "AFN2 Play Ground/AFN2 Play Ground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E99CDDCC17E785F200F37D33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFN2 Play Ground.app/AFN2 Play Ground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFN2 Play Ground/AFN2 Play Ground-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AFN2 Play GroundTests/AFN2 Play GroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E99CDDCD17E785F200F37D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFN2 Play Ground.app/AFN2 Play Ground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFN2 Play Ground/AFN2 Play Ground-Prefix.pch";
+				INFOPLIST_FILE = "AFN2 Play GroundTests/AFN2 Play GroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E99CDD9117E785F100F37D33 /* Build configuration list for PBXProject "AFN2 Play Ground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99CDDC617E785F200F37D33 /* Debug */,
+				E99CDDC717E785F200F37D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99CDDC817E785F200F37D33 /* Build configuration list for PBXNativeTarget "AFN2 Play Ground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99CDDC917E785F200F37D33 /* Debug */,
+				E99CDDCA17E785F200F37D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99CDDCB17E785F200F37D33 /* Build configuration list for PBXNativeTarget "AFN2 Play GroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99CDDCC17E785F200F37D33 /* Debug */,
+				E99CDDCD17E785F200F37D33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E99CDD8E17E785F100F37D33 /* Project object */;
+}

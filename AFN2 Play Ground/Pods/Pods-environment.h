@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_Serialization 0
 #define COCOAPODS_VERSION_PATCH_AFNetworking_Serialization 0
 
+// AFNetworking/UIKit+AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_UIKit_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_UIKit_AFNetworking 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit_AFNetworking 0
+#define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit_AFNetworking 0
+
 // FMDB
 #define COCOAPODS_POD_AVAILABLE_FMDB
 #define COCOAPODS_VERSION_MAJOR_FMDB 2
