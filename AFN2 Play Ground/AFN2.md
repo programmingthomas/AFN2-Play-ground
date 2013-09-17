@@ -103,3 +103,77 @@ Then, using the [light view controller pattern described in objc.io #1](http://w
 
 In this example I've simply requested the JSON for the front page of reddit, used my custom serializer to immediately get an array of the posts and then configured a simple data source for the posts. It is worth noting that you must retain your ArrayDataSource object (i.e. you can't define it in configureDataSource:) because the dataSource property of a UITableView expects only a weak reference to an id<UITableViewDataSource>, so I instead added it as a property.
 
+##More advanced serializer
+This example is similiar to the last, however adopts a few new features:
+
+* Use a custom AFHTTPSessionManager which makes it easy to perform custom requests. In this example I'll show a simple way to get stock market quotes from Yahoo Finance
+* Use a custom request serializer to set up the URL request based on an array of stock symbols
+* Use a custom response serializer and YahooStockValue object to parse the CSV data from Yahoo
+* Return the data to the main view controller so it can be displayed in a list
+
+**Custom client**
+
+The current recommendation for clients is that they return a singleton instance as there is little need to recreate the same object. Here is the simple client:
+
+	//YahooFinanceClient.h
+	#import <Foundation/Foundation.h>
+	#import <AFNetworking.h>
+	#import "YahooFinanceRequestSerializer.h"
+	#import "YahooFinanceResponseSerializer.h"
+	
+	typedef void(^FetchedSymbols)(NSArray*symbols);
+	
+	@interface YahooFinanceClient : AFHTTPSessionManager
+	
+	+(instancetype)client;
+	
+	-(void)fetchSymbols:(NSArray*)symbols completion:(FetchedSymbols)fetchedSymbolsBlock;
+	
+	@end
+
+	//YahooFinanceClient.m
+	#import "YahooFinanceClient.h"
+	
+	@implementation YahooFinanceClient
+	
+	#pragma mark - Singleton
+	
+	+(instancetype)client
+	{
+	    static YahooFinanceClient * requests = nil;
+	    static dispatch_once_t onceToken;
+	    dispatch_once(&onceToken, ^{
+	        requests = [[YahooFinanceClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://download.finance.yahoo.com/d/quotes.csv"]];
+	    });
+	    return requests;
+	}
+	
+	#pragma mark - custom initialization
+	
+	-(id)initWithBaseURL:(NSURL *)url
+	{
+	    self = [super initWithBaseURL:url];
+	    if (self)
+	    {
+	        self.requestSerializer = [YahooFinanceRequestSerializer new];
+	        self.responseSerializer = [YahooFinanceResponseSerializer new];
+	    }
+	    return self;
+	}
+	
+	#pragma mark - Custom fetching functions
+	
+	-(void)fetchSymbols:(NSArray *)symbols completion:(FetchedSymbols)fetchedSymbolsBlock
+	{
+	    [self GET:@"" parameters:@{@"symbols": symbols} success:^(NSURLSessionDataTask *task, id responseObject) {
+	        fetchedSymbolsBlock(responseObject);
+	    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+	        fetchedSymbolsBlock([NSArray new]);
+	        NSLog(@"ERROR: %@", error);
+	    }];
+	}
+	
+	@end
+
+This sets up a client with a base URL of the API endpoint we will be using. Because this is only fetching data from one endpoint, we will use that one however if we were requesting from Twitter, for example, we would use https://api.twitter.com/1.1/ and then when we wanted to perform a request rather than using a URL of @"" we would use @"statuses/mentions_timeline.json" for example.
+

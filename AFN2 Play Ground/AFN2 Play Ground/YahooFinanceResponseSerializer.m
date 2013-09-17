@@ -17,10 +17,40 @@
     NSMutableArray * stockValues = [NSMutableArray new];
     
     [strData enumerateLinesUsingBlock:^(NSString *line, BOOL *stop) {
-        [stockValues addObject:[[YahooStockValue alloc] initWithString:line]];
+        NSArray * components = [self parseLine:line];
+        YahooStockValue * stockValue = [[YahooStockValue alloc] initWithArray:components];
+        [stockValues addObject:stockValue];
     }];
     
     return stockValues;
+}
+
+-(NSArray*)parseLine:(NSString*)line
+{
+    NSMutableArray * allComponents = [NSMutableArray new];
+    NSMutableString * currentComponent = [NSMutableString new];
+    BOOL inQuotes = NO;
+    BOOL lastWasBackslash = NO;
+    for (NSInteger i = 0; i < line.length; i++)
+    {
+        unichar chr = [line characterAtIndex:i];
+        if (chr == '"' && !lastWasBackslash) inQuotes = !inQuotes;
+        else if (chr == '\\') lastWasBackslash = YES;
+        else if (!inQuotes && chr == ',')
+        {
+            [allComponents addObject:currentComponent];
+            currentComponent = [NSMutableString new];
+        }
+        else
+        {
+            lastWasBackslash = NO;
+            [currentComponent appendFormat:@"%c", chr];
+        }
+    }
+    
+    if (currentComponent.length > 0) [allComponents addObject:currentComponent];
+    
+    return allComponents;
 }
 
 @end

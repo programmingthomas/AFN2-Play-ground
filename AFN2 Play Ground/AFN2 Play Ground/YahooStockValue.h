@@ -16,6 +16,6 @@
 @property NSNumber * openValue;
 @property NSNumber * closeValue;
 
--(id)initWithString:(NSString*)data;
+-(id)initWithArray:(NSArray*)array;
 
 @end
