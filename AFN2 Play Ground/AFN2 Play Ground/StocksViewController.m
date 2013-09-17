@@ -35,11 +35,9 @@
 
 -(void)searchByStockSymbol:(NSString*)symbol
 {
-    //Replace with singleton
     YahooFinanceClient * client = [YahooFinanceClient client];
-    [client GET:@"" parameters:@{@"symbols": [[symbol uppercaseString] componentsSeparatedByString:@" "]} success:^(NSURLSessionDataTask *task, id responseObject) {
-        
-        self.dataSource = [[ArrayDataSource alloc] initWithItems:responseObject cellIdentifier:@"stockCell" configureCellBlock:^(id cell, id item) {
+    [client fetchSymbols:[[symbol uppercaseString] componentsSeparatedByString:@" "] completion:^(NSArray *symbols) {
+        self.dataSource = [[ArrayDataSource alloc] initWithItems:symbols cellIdentifier:@"stockCell" configureCellBlock:^(id cell, id item) {
             UITableViewCell * tCell = (UITableViewCell*)cell;
             YahooStockValue * stockValue = (YahooStockValue*)item;
             tCell.textLabel.text = stockValue.name;
@@ -47,9 +45,6 @@
         }];
         self.tableView.dataSource = self.dataSource;
         [self.tableView reloadData];
-        
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"Got error: %@", error.localizedDescription);
     }];
 }
 

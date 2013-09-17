@@ -11,8 +11,12 @@
 #import "YahooFinanceRequestSerializer.h"
 #import "YahooFinanceResponseSerializer.h"
 
+typedef void(^FetchedSymbols)(NSArray*symbols);
+
 @interface YahooFinanceClient : AFHTTPSessionManager
 
 +(instancetype)client;
+
+-(void)fetchSymbols:(NSArray*)symbols completion:(FetchedSymbols)fetchedSymbolsBlock;
 
 @end

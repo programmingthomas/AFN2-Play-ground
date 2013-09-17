@@ -35,4 +35,16 @@
     return self;
 }
 
+#pragma mark - Custom fetching functions
+
+-(void)fetchSymbols:(NSArray *)symbols completion:(FetchedSymbols)fetchedSymbolsBlock
+{
+    [self GET:@"" parameters:@{@"symbols": symbols} success:^(NSURLSessionDataTask *task, id responseObject) {
+        fetchedSymbolsBlock(responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        fetchedSymbolsBlock([NSArray new]);
+        NSLog(@"ERROR: %@", error);
+    }];
+}
+
 @end
