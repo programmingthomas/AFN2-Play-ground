@@ -22,10 +22,15 @@
 		E99CDDBB17E785F200F37D33 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99CDD9D17E785F100F37D33 /* UIKit.framework */; };
 		E99CDDC317E785F200F37D33 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E99CDDC117E785F200F37D33 /* InfoPlist.strings */; };
 		E99CDDC517E785F200F37D33 /* AFN2_Play_GroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDC417E785F200F37D33 /* AFN2_Play_GroundTests.m */; };
-		E99CDDD017E78AD100F37D33 /* RedditPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDCF17E78AD100F37D33 /* RedditPostCell.m */; };
 		E99CDDD317E78B7000F37D33 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDD217E78B7000F37D33 /* ArrayDataSource.m */; };
 		E99CDDD617E78E9200F37D33 /* RedditResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDD517E78E9200F37D33 /* RedditResponseSerializer.m */; };
 		E99CDDD917E78EF100F37D33 /* RedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDD817E78EF100F37D33 /* RedditPost.m */; };
+		E99CDDDC17E8285B00F37D33 /* StocksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDDB17E8285B00F37D33 /* StocksViewController.m */; };
+		E99CDDDF17E82D9C00F37D33 /* YahooFinanceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDDE17E82D9C00F37D33 /* YahooFinanceClient.m */; };
+		E99CDDE217E8C54800F37D33 /* YahooFinanceRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDE117E8C54800F37D33 /* YahooFinanceRequestSerializer.m */; };
+		E99CDDE517E8C6FA00F37D33 /* YahooFinanceResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDE417E8C6FA00F37D33 /* YahooFinanceResponseSerializer.m */; };
+		E99CDDE817E8CBE700F37D33 /* YahooStockValue.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDE717E8CBE700F37D33 /* YahooStockValue.m */; };
+		E99CDDEE17E8D36200F37D33 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99CDDED17E8D36200F37D33 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +64,24 @@
 		E99CDDC017E785F200F37D33 /* AFN2 Play GroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFN2 Play GroundTests-Info.plist"; sourceTree = "<group>"; };
 		E99CDDC217E785F200F37D33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E99CDDC417E785F200F37D33 /* AFN2_Play_GroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFN2_Play_GroundTests.m; sourceTree = "<group>"; };
-		E99CDDCE17E78AD100F37D33 /* RedditPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditPostCell.h; sourceTree = "<group>"; };
-		E99CDDCF17E78AD100F37D33 /* RedditPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPostCell.m; sourceTree = "<group>"; };
 		E99CDDD117E78B7000F37D33 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
 		E99CDDD217E78B7000F37D33 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 		E99CDDD417E78E9200F37D33 /* RedditResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditResponseSerializer.h; sourceTree = "<group>"; };
 		E99CDDD517E78E9200F37D33 /* RedditResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditResponseSerializer.m; sourceTree = "<group>"; };
 		E99CDDD717E78EF100F37D33 /* RedditPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedditPost.h; sourceTree = "<group>"; };
 		E99CDDD817E78EF100F37D33 /* RedditPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedditPost.m; sourceTree = "<group>"; };
+		E99CDDDA17E8285B00F37D33 /* StocksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StocksViewController.h; sourceTree = "<group>"; };
+		E99CDDDB17E8285B00F37D33 /* StocksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StocksViewController.m; sourceTree = "<group>"; };
+		E99CDDDD17E82D9C00F37D33 /* YahooFinanceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooFinanceClient.h; sourceTree = "<group>"; };
+		E99CDDDE17E82D9C00F37D33 /* YahooFinanceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YahooFinanceClient.m; sourceTree = "<group>"; };
+		E99CDDE017E8C54800F37D33 /* YahooFinanceRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooFinanceRequestSerializer.h; sourceTree = "<group>"; };
+		E99CDDE117E8C54800F37D33 /* YahooFinanceRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YahooFinanceRequestSerializer.m; sourceTree = "<group>"; };
+		E99CDDE317E8C6FA00F37D33 /* YahooFinanceResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooFinanceResponseSerializer.h; sourceTree = "<group>"; };
+		E99CDDE417E8C6FA00F37D33 /* YahooFinanceResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YahooFinanceResponseSerializer.m; sourceTree = "<group>"; };
+		E99CDDE617E8CBE700F37D33 /* YahooStockValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooStockValue.h; sourceTree = "<group>"; };
+		E99CDDE717E8CBE700F37D33 /* YahooStockValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YahooStockValue.m; sourceTree = "<group>"; };
+		E99CDDEC17E8D36200F37D33 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		E99CDDED17E8D36200F37D33 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		F19D0DFFEAB44E3EA8361F6D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -130,21 +145,16 @@
 		E99CDD9F17E785F100F37D33 /* AFN2 Play Ground */ = {
 			isa = PBXGroup;
 			children = (
+				E99CDDEB17E8D35000F37D33 /* Image loading sample */,
+				E99CDDEA17E8D21100F37D33 /* Yahoo Finance sample */,
+				E99CDDE917E8D1FA00F37D33 /* Reddit sample */,
 				E99CDDA817E785F100F37D33 /* AppDelegate.h */,
 				E99CDDA917E785F100F37D33 /* AppDelegate.m */,
 				E99CDDAB17E785F100F37D33 /* Main.storyboard */,
-				E99CDDAE17E785F100F37D33 /* ViewController.h */,
-				E99CDDAF17E785F100F37D33 /* ViewController.m */,
 				E99CDDB117E785F200F37D33 /* Images.xcassets */,
 				E99CDDA017E785F100F37D33 /* Supporting Files */,
-				E99CDDCE17E78AD100F37D33 /* RedditPostCell.h */,
-				E99CDDCF17E78AD100F37D33 /* RedditPostCell.m */,
 				E99CDDD117E78B7000F37D33 /* ArrayDataSource.h */,
 				E99CDDD217E78B7000F37D33 /* ArrayDataSource.m */,
-				E99CDDD417E78E9200F37D33 /* RedditResponseSerializer.h */,
-				E99CDDD517E78E9200F37D33 /* RedditResponseSerializer.m */,
-				E99CDDD717E78EF100F37D33 /* RedditPost.h */,
-				E99CDDD817E78EF100F37D33 /* RedditPost.m */,
 			);
 			path = "AFN2 Play Ground";
 			sourceTree = "<group>";
@@ -176,6 +186,45 @@
 				E99CDDC117E785F200F37D33 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E99CDDE917E8D1FA00F37D33 /* Reddit sample */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDDAE17E785F100F37D33 /* ViewController.h */,
+				E99CDDAF17E785F100F37D33 /* ViewController.m */,
+				E99CDDD417E78E9200F37D33 /* RedditResponseSerializer.h */,
+				E99CDDD517E78E9200F37D33 /* RedditResponseSerializer.m */,
+				E99CDDD717E78EF100F37D33 /* RedditPost.h */,
+				E99CDDD817E78EF100F37D33 /* RedditPost.m */,
+			);
+			name = "Reddit sample";
+			sourceTree = "<group>";
+		};
+		E99CDDEA17E8D21100F37D33 /* Yahoo Finance sample */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDDDA17E8285B00F37D33 /* StocksViewController.h */,
+				E99CDDDB17E8285B00F37D33 /* StocksViewController.m */,
+				E99CDDDD17E82D9C00F37D33 /* YahooFinanceClient.h */,
+				E99CDDDE17E82D9C00F37D33 /* YahooFinanceClient.m */,
+				E99CDDE017E8C54800F37D33 /* YahooFinanceRequestSerializer.h */,
+				E99CDDE117E8C54800F37D33 /* YahooFinanceRequestSerializer.m */,
+				E99CDDE317E8C6FA00F37D33 /* YahooFinanceResponseSerializer.h */,
+				E99CDDE417E8C6FA00F37D33 /* YahooFinanceResponseSerializer.m */,
+				E99CDDE617E8CBE700F37D33 /* YahooStockValue.h */,
+				E99CDDE717E8CBE700F37D33 /* YahooStockValue.m */,
+			);
+			name = "Yahoo Finance sample";
+			sourceTree = "<group>";
+		};
+		E99CDDEB17E8D35000F37D33 /* Image loading sample */ = {
+			isa = PBXGroup;
+			children = (
+				E99CDDEC17E8D36200F37D33 /* ImageViewController.h */,
+				E99CDDED17E8D36200F37D33 /* ImageViewController.m */,
+			);
+			name = "Image loading sample";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,9 +360,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E99CDDD617E78E9200F37D33 /* RedditResponseSerializer.m in Sources */,
+				E99CDDDF17E82D9C00F37D33 /* YahooFinanceClient.m in Sources */,
+				E99CDDE517E8C6FA00F37D33 /* YahooFinanceResponseSerializer.m in Sources */,
 				E99CDDB017E785F100F37D33 /* ViewController.m in Sources */,
+				E99CDDDC17E8285B00F37D33 /* StocksViewController.m in Sources */,
+				E99CDDE217E8C54800F37D33 /* YahooFinanceRequestSerializer.m in Sources */,
+				E99CDDEE17E8D36200F37D33 /* ImageViewController.m in Sources */,
+				E99CDDE817E8CBE700F37D33 /* YahooStockValue.m in Sources */,
 				E99CDDD917E78EF100F37D33 /* RedditPost.m in Sources */,
-				E99CDDD017E78AD100F37D33 /* RedditPostCell.m in Sources */,
 				E99CDDAA17E785F100F37D33 /* AppDelegate.m in Sources */,
 				E99CDDD317E78B7000F37D33 /* ArrayDataSource.m in Sources */,
 				E99CDDA617E785F100F37D33 /* main.m in Sources */,

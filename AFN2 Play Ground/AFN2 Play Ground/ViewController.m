@@ -31,21 +31,11 @@
 
 -(void)configureDataSource:(NSArray*)posts
 {
-    self.imageCache = [[NSCache alloc] init];
     self.dataSource = [[ArrayDataSource alloc] initWithItems:posts cellIdentifier:@"redditPostCell" configureCellBlock:^(id cell, id item) {
         RedditPost * post = (RedditPost*)item;
-        RedditPostCell * postCell = (RedditPostCell*)cell;
-        postCell.postTitle.text = post.title;
-        postCell.postDetail.text = [NSString stringWithFormat:@"%d points \u2022 /r/%@ \u2022 /u/%@", post.score.integerValue, post.subreddit, post.username];
-        if (post.thumbnail.length > 0)
-        {
-            postCell.imageView.image = nil;
-//            if ([self.imageCache objectForKey:post.thumbnail] != nil)
-//            {
-//                postCell.imageView.image = [self.imageCache objectForKey:post.thumbnail];
-//            }
-            [postCell.imageView setImageWithURL:[NSURL URLWithString:post.thumbnail]];
-        }
+        UITableViewCell * postCell = (UITableViewCell*)cell;
+        postCell.textLabel.text = post.title;
+        postCell.detailTextLabel.text = [NSString stringWithFormat:@"%d points \u2022 /r/%@ \u2022 /u/%@", post.score.integerValue, post.subreddit, post.username];
         
     }];
     self.tableView.dataSource = self.dataSource;

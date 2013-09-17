@@ -10,16 +10,12 @@
 #import <AFNetworking.h>
 #import <AFNetworking/AFImageRequestOperation.h>
 #import "ArrayDataSource.h"
-#import "RedditPostCell.h"
 #import "RedditPost.h"
 #import "RedditResponseSerializer.h"
 #import "UIImageView+AFNetworking.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property ArrayDataSource * dataSource;;
-
-@property NSCache * imageCache;
+@property ArrayDataSource * dataSource;
 
 @end
